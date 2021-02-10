@@ -34,6 +34,6 @@ cat <<EOF >> kind-config.yaml
 EOF
 done
 
-kind create cluster --config=kind-config.yaml --image=${KIND_NODE_IMAGE-"jieyu/kind-node:v1.17.0"} --wait=900s
+kind create cluster --config=kind-config.yaml --image=${KIND_NODE_IMAGE-"dxas90/kind-node:${K8S_VERSION}"} --wait=900s
 
 exec "$@"

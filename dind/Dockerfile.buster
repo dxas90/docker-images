@@ -1,19 +1,19 @@
 FROM debian:buster
 
-MAINTAINER Jie Yu <yujie.jay@gmail.com>
+LABEL maintainer="Daniel Ramirez <dxas90@gmail.com>"
 
 # Install docker, make, git, kubectl, helm
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-      apt-transport-https \
-      ca-certificates \
-      gnupg2 \
-      curl \
-      tini \
-      git \
-      make \
-      kmod \
-      procps && \
+    apt-transport-https \
+    ca-certificates \
+    gnupg2 \
+    curl \
+    tini \
+    git \
+    make \
+    kmod \
+    procps && \
     curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
     echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | tee /etc/apt/sources.list.d/docker.list && \
     apt-get update && \

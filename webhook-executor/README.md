@@ -8,7 +8,7 @@ This can be very useful when combining with utilities like [configmap-reload][co
 
 ## Simple usage
 
-```
+```bash
 docker run --rm webhook [WEBHOOK ARGS]
 ```
 

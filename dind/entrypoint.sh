@@ -19,7 +19,7 @@ if ! mountpoint -q /tmp; then
 fi
 
 # Check cgroupfs.
-# TODO(jieyu): Verify the filesystem.
+# TODO(dxas90): Verify the filesystem.
 if [ ! -d /sys/fs/cgroup/ ]; then
   echo >&2 'Cgroupfs is not mounted'
   exit 1

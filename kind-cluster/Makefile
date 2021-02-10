@@ -1,6 +1,6 @@
 VERSION ?= $(shell cat VERSION)
 
-IMG_REPO ?= jieyu
+IMG_REPO ?= dxas90
 IMG_TAG ?= $(VERSION)
 BASE_IMAGES ?= buster 
 
